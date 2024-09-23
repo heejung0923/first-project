@@ -1,10 +1,17 @@
-import { Button } from 'antd';
+import '@/index.css';
 
 const IndexPage = () => {
   return (
-    <div>
-      <Button>버튼</Button>
-    </div>
+    <main>
+      <div className="Container">
+        {/* <Button>버튼</Button> */}
+        <ul>
+          <li>
+            <a href="https://heedymy.tistory.com/68">css-selector 정리 ✨</a>
+          </li>
+        </ul>
+      </div>
+    </main>
   );
 };
 
