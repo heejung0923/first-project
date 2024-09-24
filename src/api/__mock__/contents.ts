@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Reference } from '@/components/CSS';
+import { PSeudoClasses, Reference } from '@/components/CSS';
 
 export interface MockContentType {
   id: number;
@@ -20,6 +20,7 @@ export const MockContent: MockContentType[] = [
   {
     id: 2,
     title: '[CSS] CSS Selector 정리',
+    component: PSeudoClasses,
     image: '/CSS.png',
     url: 'https://heedymy.tistory.com/68',
   },

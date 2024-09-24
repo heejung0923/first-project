@@ -1,6 +1,27 @@
-h3 {
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-p{
-  
+h3 {
+  text-align: center;
+  margin: 5px;
+}
+
+.Contents-Container p {
+  cursor: pointer;
+  border: black 1px solid;
+  padding: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24);
+  margin: 0 10px;
+  font-weight: 300;
+}
+
+.Contents-Container {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    min-width: max-content;
+  }
 }

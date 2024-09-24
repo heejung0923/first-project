@@ -12,6 +12,7 @@
 main .Container {
   margin: 100px;
   background: white;
+  min-width: max-content;
   border-radius: 10px;
   min-height: calc(100vh - var(--base-padding));
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -28,10 +29,12 @@ main .Container {
 }
 
 .title {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin-top: 100px;
   font-weight: 700;
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 
 .Container:hover {
@@ -59,12 +62,6 @@ ul li a:hover {
   background-color: linear-gradient(#e66465, #9198e5);
 }
 
-h1 {
-}
-
-.Card-Container {
-}
-
 .Card {
   border-radius: 5px;
   border: 1px gray solid;
@@ -75,7 +72,6 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: center;
-  cursor: pointer;
   &:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
@@ -92,4 +88,5 @@ h1 {
 .Card-Contents {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
