@@ -5,17 +5,33 @@
   min-height: 100vh;
   background: linear-gradient(#e66465, #9198e5);
   --maxWidth: 48px;
-  --padding: 10px;
+  --base-padding: 48px;
+  --md-padding: 56px;
 }
 
 main .Container {
   margin: 100px;
   background: white;
   border-radius: 10px;
-  min-height: calc(100vh - var(--maxWidth));
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+  min-height: calc(100vh - var(--base-padding));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.title-polygon {
+  object-fit: contain;
+  clip-path: polygon(50% 16%, 88% 13%, 100% 43%, 95% 84%, 68% 100%, 29% 96%, 6% 78%, 0% 43%, 17% 12%);
+  background-color: dodgerblue;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 700;
 }
 
 .Container:hover {
@@ -41,4 +57,39 @@ ul li a:visited {
 
 ul li a:hover {
   background-color: linear-gradient(#e66465, #9198e5);
+}
+
+h1 {
+}
+
+.Card-Container {
+}
+
+.Card {
+  border-radius: 5px;
+  border: 1px gray solid;
+  padding: 0 50px;
+  margin: 10px;
+  font-size: 1.3em;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.Card img {
+  max-width: 50px;
+  height: 50px;
+  margin: auto 0;
+}
+
+.Card-Contents {
+  display: flex;
+  flex-direction: column;
 }

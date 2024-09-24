@@ -1,3 +1,4 @@
+import { MockContent } from '@/api/__mock__/contents';
 import '@/index.css';
 
 const IndexPage = () => {
@@ -5,11 +6,19 @@ const IndexPage = () => {
     <main>
       <div className="Container">
         {/* <Button>버튼</Button> */}
-        <ul>
-          <li>
-            <a href="https://heedymy.tistory.com/68">css-selector 정리 ✨</a>
-          </li>
-        </ul>
+        {/* <div className="title-polygon"> */}
+        <div className="title">Dashboard</div>
+        {/* </div> */}
+        <div className="Card-Container">
+          {MockContent.map(value => (
+            <div className="Card">
+              <img src={value.image} alt="" />
+              <div className="Card-Contents">
+                <p>{value.component && <value.component />}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
