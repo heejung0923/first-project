@@ -105,3 +105,38 @@ export const AttributeSelectors: TextType[] = [
     description: 's 혹은 S를 붙여주면 대소문자를 구분',
   },
 ];
+
+export const MockInputPseudoClasses: TextType[] = [
+  {
+    code: ':enabled',
+    description: '활성화된 상태의 사용자 인터페이스 요소 나타냄',
+  },
+  {
+    code: ':disabled',
+    description: '비활성화된 상태의 사용자 인터페이스 요소 나타냄',
+  },
+  {
+    code: ':read-only',
+    description: '사용자가 편집할 수 없는 요소 선택',
+  },
+  {
+    code: ':read-write',
+    description: '사용자가 편집할 수 있는 요소 선택',
+  },
+  {
+    code: ':default',
+    description: '기본값 양식 요소 선택',
+  },
+  {
+    code: ':blank ',
+    description: '빈 사용자 입력 요소일 때 (브라우저 호환성이 낮음)',
+  },
+  {
+    code: ':valid ',
+    description: '콘텐츠가 성공적으로 검증되었을 때',
+  },
+  {
+    code: ':invalid ',
+    description: '콘텐츠가 실패했을 때',
+  },
+];

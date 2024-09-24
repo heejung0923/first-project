@@ -87,3 +87,20 @@ export const AttributeSelector = () => {
     </main>
   );
 };
+
+export const InputPseudoClasses = () => {
+  return (
+    <main>
+      <ContentsTemplate
+        title="💻 Input Pseudo Classes(입력 가상 클래스)"
+        description={
+          <div className="structural-container">
+            {AttributeSelectors.map(value => (
+              <DescriptionBox id={value.id} code={value.code} description={value.description} />
+            ))}
+          </div>
+        }
+      />
+    </main>
+  );
+};
