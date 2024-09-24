@@ -1,5 +1,5 @@
-import { ConfigProvider } from 'antd';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ConfigProvider } from 'antd';
 import IndexPage from '@/pages/page';
 
 const router = createBrowserRouter([

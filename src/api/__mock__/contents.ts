@@ -1,5 +1,5 @@
-import { Reference } from '@/components/CSS';
 import { FC } from 'react';
+import { Reference } from '@/components/CSS';
 
 export interface MockContentType {
   id: number;

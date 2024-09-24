@@ -9,7 +9,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
   ],
-  plugins: ['react-hooks', 'promise', '@emotion', 'unused-imports', 'import'],
+  plugins: ['react-hooks', 'promise', 'unused-imports', 'import'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
