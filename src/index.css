@@ -4,18 +4,26 @@
   font-weight: 400;
   min-height: 100vh;
   background: linear-gradient(#e66465, #9198e5);
-  --maxWidth: 48px;
+  --maxWidth: 768px;
   --base-padding: 48px;
   --md-padding: 56px;
+  --background-pink: #e66465;
+  --background-purple: #9198e5;
+
+  --box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24);
 }
 
 main .Container {
   margin: 100px;
   background: white;
-  min-width: max-content;
+  min-width: fit-content;
   border-radius: 10px;
   min-height: calc(100vh - var(--base-padding));
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  @media screen and (max-width: 768px) {
+    margin: var(--md-padding);
+  }
 }
 
 .title-polygon {
@@ -88,5 +96,4 @@ ul li a:hover {
 .Card-Contents {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }

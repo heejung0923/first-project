@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import { PSeudoClasses, Reference } from '@/components/CSS';
+import { AttributeSelector, PSeudoClasses, Reference, StructuralPseudoClasses } from '@/components/CSS';
 
 export interface MockContentType {
   id: number;
   title: string;
   image: string;
   component?: FC;
-  url: string;
+  url?: string;
 }
 
 export const MockContent: MockContentType[] = [
@@ -21,6 +21,20 @@ export const MockContent: MockContentType[] = [
     id: 2,
     title: '[CSS] CSS Selector 정리',
     component: PSeudoClasses,
+    image: '/CSS.png',
+    url: 'https://heedymy.tistory.com/68',
+  },
+  {
+    id: 2,
+    title: '[CSS] CSS Selector 정리',
+    component: StructuralPseudoClasses,
+    image: '/CSS.png',
+    url: 'https://heedymy.tistory.com/68',
+  },
+  {
+    id: 4,
+    title: '[CSS] CSS Selector 정리',
+    component: AttributeSelector,
     image: '/CSS.png',
     url: 'https://heedymy.tistory.com/68',
   },
