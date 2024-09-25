@@ -216,32 +216,39 @@ export const Translate = () => {
           <ul>
             <li>화면에서 가장 작은 단위</li>
           </ul>
+
           <li>deg</li>
           <ul>
             <li>각도 단위로 회전을 나타냄</li>
           </ul>
           <Divider />
+
           <li>in, cm, mm</li>
           <ul>
             <li>화면이나 인쇄물의 크기</li>
           </ul>
+
           <li>pt(포인트), pc(파이카)</li>
           <ul>
             <li>인쇄에서 사용되는 단위</li>
           </ul>
         </ul>
+        <h4>상대 단위</h4>
         <ul>
-          <li>rem</li>
+          <li>%</li>
+          <ul>
+            <li>부모 요소 기준으로 비율 표현</li>
+          </ul>
+        </ul>
+
+        <ul>
+          <li>em</li>
           <ul>
             <li>부모의 폰트 사이즈를 상속받음</li>
             <li>만약 부모요소가 정해져 있지않으면, 자동으로 1em=16px</li>
             <li>
               <code>rem</code>: 최상위 태그에 기준(주로 html 태그)
             </li>
-          </ul>
-          <li>%</li>
-          <ul>
-            <li>부모 요소 기준으로 비율 표현</li>
           </ul>
 
           <li>vh & vw (vertical height & vertical width)</li>
@@ -250,21 +257,22 @@ export const Translate = () => {
             <li>타겟요소를 뷰포트의 너비값, 높이값에 맞게 사용할 수 있음</li>
             <li>브라우저 높이값이 900px일때, 1vh는 9px</li>
           </ul>
+
           <li>vmin & vmax</li>
           <ul>
             <li>뷰 포트 너비값, 높이값의 상대적인 영향의 최대,최소값</li>
             <li>만약 너비 1100px, 높이 700px일때 1vmin은 7px, 1max는 11px</li>
           </ul>
-          <li>ex & ch</li>
+          <li>ex(엑스) & ch(씨-에이치)</li>
           <ul>
             <li>em과 rem은 font-family에 의존한다면 다른 두 단위(ex, ch)는 폰트의 특정 수치에 기반</li>
-            <li>ch단위, 제로 문자인 0의 너비값의 "고급 척도"</li>
+            <li>ch단위, 제로 문자인 숫자 0의 너비값의 "고급 척도"</li>
             <ul>
               <li>
                 monospace 폰트의 N의 너비값을 부여받았다는 것이며, width:40ch;는 40개의 문자열을 포함하고 있다는 뜻
               </li>
             </ul>
-            <li>ex 단위의 정의는 "현재 폰트의 x-높이값 또는 em의 절반값이다.</li>
+            <li>ex 단위의 정의는 "현재 폰트의 소문자 x-높이값 또는 em의 절반값이다.</li>
             <ul>
               <li>x-높이값은 소문자 x의 높이값이기도 함</li>
               <li>주로 폰트의 중간지점을 알아내기 위해 사용</li>
