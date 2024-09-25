@@ -1,4 +1,5 @@
 import { MockContent } from '@/api/__mock__/contents';
+import { Translate } from '@/components/CSS';
 import '@/index.css';
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
               </div>
             </div>
           ))}
+          <Translate />
         </div>
       </div>
     </main>
