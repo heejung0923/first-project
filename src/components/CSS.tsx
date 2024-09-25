@@ -3,7 +3,7 @@ import '@/styles/Reference.css';
 import { ContentsTemplate } from './CotentsTemplate';
 import { AttributeSelectors, StructuralPseudoText, TextType, UserPseudoText } from '@/api/__mock__/contentsText';
 import { FC } from 'react';
-import { Divider } from 'antd';
+import { Button, Divider } from 'antd';
 
 export const Reference = () => {
   return (
@@ -11,6 +11,7 @@ export const Reference = () => {
       <h3>👩🏻‍💻</h3>
       <h3>Reference</h3>
       <ul>
+        <Button>Practice Page</Button>
         <li> pseudo classes, selector</li>
         <li>
           <a href="https://heedymy.tistory.com/68">블로깅 ✨</a>
