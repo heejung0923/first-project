@@ -20,6 +20,12 @@ const PracticePage = () => {
             <button className="selector-button blue">blue</button>
             <button className="selector-button green">green</button>
           </div>
+          <div className="position-box">
+            <h3>position</h3>
+            <div>
+              <div className="position-message-1">message</div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

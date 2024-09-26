@@ -1,6 +1,7 @@
 .Practice-Box {
   text-align: center;
 }
+
 .display-box {
   a span div {
     margin: 0 10px;
@@ -47,5 +48,25 @@
   }
 }
 
-@keyframes background-color {
+.position-message-1 {
+  display: flex;
+  position: relative;
+  background-color: blue;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 20px;
+  }
+}
+
+.position-box {
+  > div {
+    display: flex;
+    justify-content: center;
+  }
 }
