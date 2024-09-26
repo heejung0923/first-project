@@ -4,14 +4,16 @@ import { ContentsTemplate } from './CotentsTemplate';
 import { AttributeSelectors, StructuralPseudoText, TextType, UserPseudoText } from '@/api/__mock__/contentsText';
 import { FC } from 'react';
 import { Button, Divider } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 export const Reference = () => {
+  const navigate = useNavigate();
   return (
     <main>
       <h3>👩🏻‍💻</h3>
       <h3>Reference</h3>
       <ul>
-        <Button>Practice Page</Button>
+        <Button onClick={() => navigate('/practice')}>Practice Page</Button>
         <li> pseudo classes, selector</li>
         <li>
           <a href="https://heedymy.tistory.com/68">블로깅 ✨</a>

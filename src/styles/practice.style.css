@@ -1,0 +1,89 @@
+.Practice-Box {
+  text-align: center;
+}
+
+.display-box a span div {
+  margin: 0 10px;
+}
+.display-box div {
+  display: inline-block;
+  background-color: yellow;
+  width: 100px;
+}
+
+.scss-button-blue {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.scss-button-blue:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.scss-button-blue ~ button {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.scss-button-blue ~ button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.selector-button {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.selector-button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.selector-button.blue {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.selector-button.blue:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.selector-button.green {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.selector-button.green:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.selector-button:hover {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+.selector-button:hover:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes background-color {}/*# sourceMappingURL=practice.style.css.map */
